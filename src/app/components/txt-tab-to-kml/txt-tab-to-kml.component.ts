@@ -37,7 +37,7 @@ export class TxtToKmlComponent {
       const text = reader.result as string;
       const lines = text.split('\n').filter(l => l.trim() !== '');
       const parsedData = this.parseData(lines);
-      this.previewData = parsedData.slice(0, 10);
+      this.previewData = parsedData.slice(0, 5);
       this.kmlData = this.convertToKML(parsedData);
     };
 
