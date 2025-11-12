@@ -1,0 +1,12 @@
+<div class="p-4 space-y-4">
+    <h2 class="text-xl font-bold">Convertir TXT a KML</h2>
+
+    <input type="file" (change)="onFileSelected($event)" accept=".txt,.csv" />
+
+    <button 
+      *ngIf="kmlData" 
+      (click)="downloadKML()" 
+      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      Descargar KML
+    </button>
+  </div>
